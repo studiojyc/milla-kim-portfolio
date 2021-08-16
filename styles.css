@@ -1,0 +1,339 @@
+/*  ----------------------------
+    Global Styles
+    ---------------------------- */
+
+    :root {
+        --green: #34852D;
+    }
+
+body {
+    background-color: #F3F1EC;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 40%;
+}
+
+/*  ----------------------------
+    Typography
+    ---------------------------- */
+
+
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+
+}
+
+h3 {
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*  ----------------------------
+    Navigation
+    ---------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+
+    padding: 3% 2vw;
+
+    width: 96vw;
+
+    background-color: #F3F1EC;
+
+    
+}
+
+nav p {
+    font-size: 18px;
+}
+
+
+
+/*  ----------------------------
+    Layout
+    ---------------------------- */
+
+    /* ------ HOMEPAGE ------ */
+
+:root {
+    --margin: 0 5vw;
+    --caseStudyMargin: 0 2vw;
+}
+
+header {
+    margin: var(--margin);
+    margin-bottom: 30%;
+}
+
+
+.projects-container {
+    margin: var(--margin);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+/* Individual Project Thumbnail Styles */
+
+.project {
+    margin-top: 15%;
+}
+
+.project-image {
+    background-color: black;
+    width: 100%;
+    padding-top: 60%;
+}
+
+.title {
+    margin-top: 5%;
+}
+
+.description {
+    margin-top: 5%;
+}
+
+
+
+
+    /* ------ CASE STUDY ------ */
+
+/* Project Details */
+
+.projectTitle {
+    margin-left: 20vw;
+    margin-top: -20%;
+    margin-right: 4vw;
+}
+
+.projectHeadImage {
+    width: 96vw;
+    padding-top: 55%;
+    background-color: black;
+    margin: var(--caseStudyMargin);
+}
+
+.projectDescription {
+    margin: var(--caseStudyMargin);
+    width: 90vw;
+}
+
+.projectDescription .description {
+    font-size: 18px;
+    margin-top: 4%;
+    margin-bottom: 20%;
+}
+
+.projectDescription .description p {
+    font-size: 18px;
+}
+
+.projectDetails {}
+
+.detail {
+    display: flex;
+    margin-top: 2%;
+
+}
+
+.detailHeading {
+    width: 20vw;
+    color: var(--green);
+}
+
+/* Project Section */
+
+section {
+    margin: var(--caseStudyMargin);
+    margin-top: 30%;
+}
+
+.headerOne h1 {
+    margin-bottom: 0;
+}
+
+.additionalText {
+    margin-top: 3%;
+}
+
+.additionalText p {
+    color: var(--green);
+    font-size: 18px;
+}
+
+.list {
+    margin-left: 5vw;
+    width: 90vw;
+    margin-bottom: 30%;
+}
+
+ol li {
+    font-size: 18px;
+    margin-top: 15%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type:none;
+
+    font-size: 14px;
+
+    margin-top: 2%;
+
+}
+
+ul li a {
+    color: var(--green);
+
+}
+
+.fullLandscapeImage {
+    background-color: black;
+    width: 96vw;
+    padding-top: 50%;
+    margin-bottom: 3%;
+}
+
+.sectionText {
+    margin-top: 20%;
+}
+
+.sectionText h3 {
+    margin-bottom: 5%;
+}
+
+.sectionText p {
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+    display: flex;
+    position: relative;
+    width: 98vw;
+    padding: 0 1vw;
+    padding-top: 3%;
+
+    margin-top: 20%;
+
+    border-top: 1px solid black;
+
+}
+
+
+.left-text {
+    width: 40vw;
+}
+
+.left-text p {
+    font-size: 26px;
+}
+
+.right-text {
+    margin-top: 1%;
+    margin-left: 1vw;
+    width: 57vw;
+}
+
+.footer-section {
+    margin-bottom: 14%;
+}
+
+.final {
+    margin-bottom: 0;
+}
+
+.footer-section p {
+    margin-bottom: 2%;
+}
+
+.subtitle {
+    margin-bottom: 5%;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright p {
+    margin-bottom: 2%;
+
+}
+
+.home-button {
+    width: 100vw;
+    /* height: 20vh; */
+
+    overflow: hidden;
+
+    display:inline-block;
+    white-space: nowrap;
+
+    border-top: 1px solid black;
+    padding-top: 2%;
+}
+
+.marquee-container {
+    width: 1160px;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: move 10s infinite linear;
+    /* text-align: center; */
+
+}
+
+@keyframes move {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+.marquee-container p {
+    font-size: 36px;
+    margin:0;
+    padding-left:0px;
+    /* border: 1px solid blue; */
+    width: 580px;
+
+
+}
